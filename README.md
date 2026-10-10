@@ -2,6 +2,10 @@
 
 Snap a recipe, see what you're allergic to, and get safe substitutes, fully offline. Gemma 4 E2B runs on the phone through Google's LiteRT-LM.
 
+## About
+
+Recipes rarely say which allergens they contain, and many hide behind unfamiliar names (whey is dairy, soy sauce has wheat, bagoong is shrimp). SubstiChoose is an Android app that checks a recipe from a single photo, even a handwritten one: it lists the ingredients, flags your allergens, and suggests safe substitutes with amounts and how each swap changes the dish. Out of an ingredient? Mark it "Don't have it" and the app suggests alternatives you can use instead. Allergens are flagged by a built-in dictionary, not by AI alone, and every suggestion is checked against all your allergies. The AI, Google's Gemma 4 E2B, runs on the phone, so your data stays private and scanning works offline. Internet is needed only for the one-time model download (2.6 GB) and for nutrition values from the USDA.
+
 ## Install the app on a phone
 
 You don't need a computer for this. The latest APK is `dist/SubstiChoose-0.3.apk` (48 MB).
