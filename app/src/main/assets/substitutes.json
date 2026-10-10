@@ -1,0 +1,676 @@
+{
+  "version": 1,
+  "notes": "Curated swaps, used instantly and as the fallback when Gemma is slow or fails. In 'ratio', the original ingredient is always on the left of '=' (the safety filter checks only the right side). 'contains' uses the allergen ids from allergens.json.",
+  "swaps": [
+    {
+      "ingredient": "egg",
+      "match": [
+        "egg",
+        "eggs",
+        "itlog"
+      ],
+      "options": [
+        {
+          "name": "Flax egg",
+          "ratio": "1 egg = 1 tbsp ground flaxseed + 3 tbsp water, rested 5 min",
+          "effect": "Binds well; denser crumb, mild nutty taste",
+          "note": "Best in muffins, cookies and quick breads",
+          "contains": []
+        },
+        {
+          "name": "Mashed ripe banana",
+          "ratio": "1 egg = 1/4 cup (about 60 g) mashed banana",
+          "effect": "Moist and sweet; adds banana flavor",
+          "note": "Good in banana bread, pancakes and brownies",
+          "contains": []
+        },
+        {
+          "name": "Aquafaba (chickpea liquid)",
+          "ratio": "1 egg = 3 tbsp aquafaba",
+          "effect": "Light texture; whips like egg whites",
+          "note": "Use the liquid from a can of chickpeas",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "butter",
+      "match": [
+        "butter",
+        "mantikilya",
+        "margarine"
+      ],
+      "options": [
+        {
+          "name": "Vegetable oil",
+          "ratio": "1 cup butter = 3/4 cup vegetable oil",
+          "effect": "Moister, less buttery flavor",
+          "note": "Not for flaky pastry or frosting",
+          "contains": []
+        },
+        {
+          "name": "Coconut oil",
+          "ratio": "1 cup butter = 1 cup coconut oil",
+          "effect": "Firm when cool; slight coconut taste",
+          "note": "Use refined coconut oil for less coconut flavor",
+          "contains": []
+        },
+        {
+          "name": "Plant-based butter",
+          "ratio": "1 cup butter = 1 cup plant-based butter",
+          "effect": "Closest to butter in baking",
+          "note": "Check the label: some brands contain whey, soy or nuts",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "milk",
+      "match": [
+        "milk",
+        "fresh milk",
+        "gatas",
+        "whole milk"
+      ],
+      "options": [
+        {
+          "name": "Soy milk",
+          "ratio": "1 cup milk = 1 cup soy milk",
+          "effect": "Closest protein and texture to milk",
+          "note": "Use unsweetened for savory dishes",
+          "contains": [
+            "soy"
+          ]
+        },
+        {
+          "name": "Rice milk",
+          "ratio": "1 cup milk = 1 cup rice milk",
+          "effect": "Thinner and slightly sweet",
+          "note": "Fine for pancakes and batters",
+          "contains": []
+        },
+        {
+          "name": "Oat milk",
+          "ratio": "1 cup milk = 1 cup oat milk",
+          "effect": "Creamy, mild taste",
+          "note": "Oats can carry gluten unless labeled gluten-free",
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "name": "Almond milk",
+          "ratio": "1 cup milk = 1 cup almond milk",
+          "effect": "Light and slightly nutty",
+          "note": "Use unsweetened for savory dishes",
+          "contains": [
+            "treenuts"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "buttermilk",
+      "match": [
+        "buttermilk"
+      ],
+      "options": [
+        {
+          "name": "Milk + lemon juice",
+          "ratio": "1 cup buttermilk = 1 cup milk + 1 tbsp lemon juice or vinegar, rested 5-10 min",
+          "effect": "Tangy and slightly thick, like buttermilk",
+          "note": "Works in pancakes, cakes and fried chicken batter",
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "name": "Soy milk + vinegar",
+          "ratio": "1 cup buttermilk = 1 cup soy milk + 1 tbsp vinegar, rested 5-10 min",
+          "effect": "Curdles like buttermilk",
+          "note": "Dairy-free option",
+          "contains": [
+            "soy"
+          ]
+        },
+        {
+          "name": "Rice milk + lemon juice",
+          "ratio": "1 cup buttermilk = 1 cup rice milk + 1 tbsp lemon juice, rested 5-10 min",
+          "effect": "Thinner; less tang and lift",
+          "note": "Dairy- and soy-free option",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "cream",
+      "match": [
+        "cream",
+        "heavy cream",
+        "whipping cream",
+        "all-purpose cream",
+        "nestle cream"
+      ],
+      "options": [
+        {
+          "name": "Coconut cream",
+          "ratio": "1 cup cream = 1 cup coconut cream",
+          "effect": "Rich; adds coconut flavor",
+          "note": "Chilled coconut cream can be whipped",
+          "contains": []
+        },
+        {
+          "name": "Milk + melted butter",
+          "ratio": "1 cup cream = 3/4 cup milk + 1/4 cup melted butter",
+          "effect": "Works in sauces and baking",
+          "note": "Will not whip",
+          "contains": [
+            "dairy"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "sour cream / yogurt",
+      "match": [
+        "sour cream",
+        "yogurt",
+        "yoghurt",
+        "greek yogurt"
+      ],
+      "options": [
+        {
+          "name": "Coconut yogurt",
+          "ratio": "1 cup sour cream = 1 cup coconut yogurt",
+          "effect": "Tangy; light coconut taste",
+          "note": "Choose plain, unsweetened",
+          "contains": []
+        },
+        {
+          "name": "Silken tofu + lemon juice",
+          "ratio": "1 cup sour cream = 1 cup blended silken tofu + 1 tbsp lemon juice",
+          "effect": "Smooth and tangy",
+          "note": "Blend until completely smooth",
+          "contains": [
+            "soy"
+          ]
+        },
+        {
+          "name": "Plain Greek yogurt",
+          "ratio": "1 cup sour cream = 1 cup plain Greek yogurt",
+          "effect": "Tangier, lighter",
+          "note": "For when you just don't have sour cream",
+          "contains": [
+            "dairy"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "cheese",
+      "match": [
+        "cheese",
+        "parmesan",
+        "cheddar",
+        "keso",
+        "kesong puti",
+        "quickmelt"
+      ],
+      "options": [
+        {
+          "name": "Nutritional yeast",
+          "ratio": "1/4 cup grated parmesan = 2 tbsp nutritional yeast, then taste",
+          "effect": "Savory, cheesy flavor; does not melt",
+          "note": "Good on pasta and popcorn",
+          "contains": []
+        },
+        {
+          "name": "Cashew cheese",
+          "ratio": "1 cup cheese = 1 cup cashew cheese",
+          "effect": "Creamy; melts softly",
+          "note": "Store-bought or blended soaked cashews",
+          "contains": [
+            "treenuts"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "all-purpose flour",
+      "match": [
+        "flour",
+        "all-purpose flour",
+        "wheat flour",
+        "harina",
+        "cake flour",
+        "bread flour"
+      ],
+      "options": [
+        {
+          "name": "Gluten-free baking flour",
+          "ratio": "1 cup flour = 1 cup gluten-free baking flour (1:1 blend)",
+          "effect": "Slightly more crumbly",
+          "note": "Pick a blend that already contains xanthan gum",
+          "contains": []
+        },
+        {
+          "name": "Cornstarch (thickening only)",
+          "ratio": "2 tbsp flour = 1 tbsp cornstarch",
+          "effect": "Clearer, glossier sauce",
+          "note": "For gravies and sauces, not baking",
+          "contains": []
+        },
+        {
+          "name": "Rice flour (coating and frying)",
+          "ratio": "1 cup flour = 1 cup rice flour",
+          "effect": "Crispier coating",
+          "note": "Not for bread or cake on its own",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "breadcrumbs",
+      "match": [
+        "breadcrumbs",
+        "bread crumbs",
+        "panko"
+      ],
+      "options": [
+        {
+          "name": "Crushed chicharon",
+          "ratio": "1 cup breadcrumbs = 1 cup crushed chicharon",
+          "effect": "Very crunchy and savory",
+          "note": "Salty, so cut the added salt",
+          "contains": []
+        },
+        {
+          "name": "Crushed rice crackers",
+          "ratio": "1 cup breadcrumbs = 1 cup crushed rice crackers",
+          "effect": "Light, crisp coating",
+          "note": "Check the label for soy or wheat",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "soy sauce",
+      "match": [
+        "soy sauce",
+        "toyo"
+      ],
+      "options": [
+        {
+          "name": "Coconut aminos",
+          "ratio": "1 tbsp soy sauce = 1 tbsp coconut aminos + a pinch of salt",
+          "effect": "Sweeter and less salty",
+          "note": "Soy- and gluten-free",
+          "contains": []
+        },
+        {
+          "name": "Tamari",
+          "ratio": "1 tbsp soy sauce = 1 tbsp tamari",
+          "effect": "Same taste, slightly richer",
+          "note": "Gluten-free soy sauce: helps a gluten allergy, not a soy allergy",
+          "contains": [
+            "soy"
+          ]
+        },
+        {
+          "name": "Fish sauce (patis)",
+          "ratio": "1 tbsp soy sauce = 1/2 tbsp patis",
+          "effect": "Salty and savory, no soy taste",
+          "note": "Use half; patis is stronger",
+          "contains": [
+            "fish"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "fish sauce",
+      "match": [
+        "fish sauce",
+        "patis"
+      ],
+      "options": [
+        {
+          "name": "Salt",
+          "ratio": "1 tbsp patis = about 1/2 tsp salt",
+          "effect": "Same saltiness, less savory depth",
+          "note": "Add a little mushroom seasoning for depth if you have it",
+          "contains": []
+        },
+        {
+          "name": "Coconut aminos + salt",
+          "ratio": "1 tbsp patis = 1 tbsp coconut aminos + a pinch of salt",
+          "effect": "Savory and slightly sweet",
+          "note": "Fish-, soy- and gluten-free",
+          "contains": []
+        },
+        {
+          "name": "Soy sauce",
+          "ratio": "1 tbsp patis = 1 tbsp soy sauce",
+          "effect": "Savory, darker color",
+          "note": "Common swap in adobo-style dishes",
+          "contains": [
+            "soy",
+            "gluten"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "shrimp paste (bagoong)",
+      "match": [
+        "bagoong",
+        "bagoong alamang",
+        "shrimp paste",
+        "alamang"
+      ],
+      "options": [
+        {
+          "name": "Miso paste",
+          "ratio": "1 tbsp bagoong = 1 tbsp miso paste",
+          "effect": "Salty and savory, no seafood taste",
+          "note": "Add a pinch of salt if it tastes flat",
+          "contains": [
+            "soy"
+          ]
+        },
+        {
+          "name": "Mashed tausi (fermented black beans)",
+          "ratio": "1 tbsp bagoong = 1 tbsp mashed tausi",
+          "effect": "Salty, funky, deep flavor",
+          "note": "Rinse first if very salty",
+          "contains": [
+            "soy"
+          ]
+        },
+        {
+          "name": "Salt + mushroom seasoning",
+          "ratio": "1 tbsp bagoong = 1/4 tsp salt + mushroom seasoning to taste",
+          "effect": "Salty and savory; milder",
+          "note": "Taste and add little by little",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "oyster sauce",
+      "match": [
+        "oyster sauce"
+      ],
+      "options": [
+        {
+          "name": "Vegetarian mushroom oyster sauce",
+          "ratio": "1 tbsp oyster sauce = 1 tbsp vegetarian mushroom oyster sauce",
+          "effect": "Nearly identical taste",
+          "note": "Usually contains soy and wheat; check the label",
+          "contains": [
+            "soy",
+            "gluten"
+          ]
+        },
+        {
+          "name": "Coconut aminos + sugar",
+          "ratio": "1 tbsp oyster sauce = 1 tbsp coconut aminos + a pinch of sugar",
+          "effect": "Thinner and less savory",
+          "note": "Shellfish-, soy- and gluten-free",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "peanut butter",
+      "match": [
+        "peanut butter"
+      ],
+      "options": [
+        {
+          "name": "Sunflower seed butter",
+          "ratio": "1 cup peanut butter = 1 cup sunflower seed butter",
+          "effect": "Similar texture, earthier taste",
+          "note": "Can turn baked goods slightly green with baking soda; this is harmless",
+          "contains": []
+        },
+        {
+          "name": "Tahini",
+          "ratio": "1 cup peanut butter = 1 cup tahini",
+          "effect": "Thinner, more bitter",
+          "note": "Add a little honey or sugar to balance",
+          "contains": [
+            "sesame"
+          ]
+        },
+        {
+          "name": "Almond butter",
+          "ratio": "1 cup peanut butter = 1 cup almond butter",
+          "effect": "Very close in baking",
+          "note": "Not for tree nut allergies",
+          "contains": [
+            "treenuts"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "nuts (topping or mix-in)",
+      "match": [
+        "walnuts",
+        "pecans",
+        "almonds",
+        "cashews",
+        "nuts",
+        "peanuts",
+        "pili"
+      ],
+      "options": [
+        {
+          "name": "Toasted sunflower seeds",
+          "ratio": "1 cup nuts = 1 cup toasted sunflower seeds",
+          "effect": "Same crunch, milder flavor",
+          "note": "Check the label for 'may contain nuts'",
+          "contains": []
+        },
+        {
+          "name": "Toasted pumpkin seeds (pepitas)",
+          "ratio": "1 cup nuts = 1 cup toasted pumpkin seeds",
+          "effect": "Crunchy, slightly sweet",
+          "note": "Good on bread, salads and cookies",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "sesame oil",
+      "match": [
+        "sesame oil"
+      ],
+      "options": [
+        {
+          "name": "Vegetable oil",
+          "ratio": "1 tbsp sesame oil = 1 tbsp vegetable oil",
+          "effect": "Loses the toasted flavor",
+          "note": "Add a few drops of garlic oil for aroma",
+          "contains": []
+        },
+        {
+          "name": "Olive oil",
+          "ratio": "1 tbsp sesame oil = 1 tbsp olive oil",
+          "effect": "Fruity instead of toasted",
+          "note": "Best in dressings",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "baking powder",
+      "match": [
+        "baking powder"
+      ],
+      "options": [
+        {
+          "name": "Baking soda + cream of tartar",
+          "ratio": "1 tsp baking powder = 1/4 tsp baking soda + 1/2 tsp cream of tartar",
+          "effect": "Same rise",
+          "note": "Bake right after mixing",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "baking soda",
+      "match": [
+        "baking soda"
+      ],
+      "options": [
+        {
+          "name": "Baking powder",
+          "ratio": "1 tsp baking soda = 3 tsp baking powder",
+          "effect": "Slightly less browning",
+          "note": "Reduce the salt a little",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "lemon juice",
+      "match": [
+        "lemon juice",
+        "lemon",
+        "lime juice"
+      ],
+      "options": [
+        {
+          "name": "Calamansi juice",
+          "ratio": "1 tbsp lemon juice = 1 tbsp calamansi juice",
+          "effect": "Brighter, more floral",
+          "note": "Strain out the seeds",
+          "contains": []
+        },
+        {
+          "name": "White vinegar",
+          "ratio": "1 tbsp lemon juice = 1/2 tbsp white vinegar",
+          "effect": "Sour without the citrus aroma",
+          "note": "Use half; vinegar is sharper",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "vinegar",
+      "match": [
+        "vinegar",
+        "cane vinegar",
+        "sukang iloko",
+        "white vinegar"
+      ],
+      "options": [
+        {
+          "name": "Calamansi juice",
+          "ratio": "1 tbsp vinegar = 1 tbsp calamansi juice",
+          "effect": "Fruitier, less sharp",
+          "note": "Add near the end of cooking",
+          "contains": []
+        },
+        {
+          "name": "Apple cider vinegar",
+          "ratio": "1 tbsp vinegar = 1 tbsp apple cider vinegar",
+          "effect": "Slightly fruity",
+          "note": "Good in adobo",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "brown sugar",
+      "match": [
+        "brown sugar",
+        "muscovado"
+      ],
+      "options": [
+        {
+          "name": "White sugar + molasses",
+          "ratio": "1 cup brown sugar = 1 cup white sugar + 1 tbsp molasses",
+          "effect": "Same taste and moisture",
+          "note": "Mix well before using",
+          "contains": []
+        },
+        {
+          "name": "White sugar",
+          "ratio": "1 cup brown sugar = 1 cup white sugar",
+          "effect": "Less moist and caramel-like",
+          "note": "Fine in most cooking",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "condensed milk",
+      "match": [
+        "condensed milk",
+        "sweetened condensed milk"
+      ],
+      "options": [
+        {
+          "name": "Coconut condensed milk",
+          "ratio": "1 can condensed milk = 1 can coconut condensed milk",
+          "effect": "Same sweetness; coconut taste",
+          "note": "Dairy-free; works in leche flan",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "ingredient": "evaporated milk",
+      "match": [
+        "evaporated milk"
+      ],
+      "options": [
+        {
+          "name": "Coconut milk",
+          "ratio": "1 cup evaporated milk = 1 cup coconut milk",
+          "effect": "Rich; coconut flavor",
+          "note": "Dairy-free",
+          "contains": []
+        },
+        {
+          "name": "Reduced regular milk",
+          "ratio": "1 cup evaporated milk = 2 1/4 cups milk simmered down to 1 cup",
+          "effect": "Same as evaporated milk",
+          "note": "For when you just don't have it",
+          "contains": [
+            "dairy"
+          ]
+        }
+      ]
+    },
+    {
+      "ingredient": "cornstarch",
+      "match": [
+        "cornstarch",
+        "corn starch",
+        "cornflour"
+      ],
+      "options": [
+        {
+          "name": "Potato starch",
+          "ratio": "1 tbsp cornstarch = 1 tbsp potato starch",
+          "effect": "Same thickening",
+          "note": "Add near the end; don't boil hard",
+          "contains": []
+        },
+        {
+          "name": "All-purpose flour",
+          "ratio": "1 tbsp cornstarch = 2 tbsp all-purpose flour",
+          "effect": "Cloudier sauce",
+          "note": "Cook a few minutes to remove the raw taste",
+          "contains": [
+            "gluten"
+          ]
+        }
+      ]
+    }
+  ]
+}

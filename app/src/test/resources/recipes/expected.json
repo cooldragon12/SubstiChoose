@@ -1,0 +1,8 @@
+{
+  "banana-bread.txt": ["dairy", "egg", "gluten", "treenuts"],
+  "chicken-adobo.txt": ["gluten", "soy"],
+  "leche-flan.txt": ["dairy", "egg"],
+  "pancit-canton.txt": ["egg", "gluten", "shellfish", "soy"],
+  "ginataang-kalabasa.txt": ["fish", "shellfish"],
+  "peanut-butter-cookies.txt": ["dairy", "egg", "gluten", "peanut"]
+}

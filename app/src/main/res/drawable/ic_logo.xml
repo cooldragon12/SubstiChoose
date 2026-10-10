@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- In-app logo tile (same art as the launcher icon, cropped to its safe zone). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="28dp" android:height="28dp"
+    android:viewportWidth="76" android:viewportHeight="76">
+    <group android:translateX="-16" android:translateY="-16">
+        <path android:pathData="M0,0 H108 V108 H0 Z">
+            <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="0" android:endX="108" android:endY="108"
+                android:startColor="#FF3C8550" android:endColor="#FF1F5130" />
+        </aapt:attr>
+        </path>
+        <group android:scaleX="1.1" android:scaleY="1.1" android:pivotX="54" android:pivotY="54">
+        <group>
+            <clip-path android:pathData="M0,0 H76.6 L28,108 H0 Z" />
+            <path android:pathData="M66.5,36 C63.5,30.5 59,28.5 54,28.5 C46.5,28.5 41,33 41,39.5 C41,47 48,49.5 54,52 C61,54.5 67,57.5 67,65.5 C67,72.5 61,77.5 54,77.5 C48,77.5 43,75.5 40,70" android:strokeColor="#FFFFFFFF" android:strokeWidth="13" android:strokeLineCap="round" />
+        </group>
+        <group android:translateY="2.5">
+            <clip-path android:pathData="M79.4,-2.5 H108 V108 H31.9 Z" />
+            <path android:pathData="M66.5,36 C63.5,30.5 59,28.5 54,28.5 C46.5,28.5 41,33 41,39.5 C41,47 48,49.5 54,52 C61,54.5 67,57.5 67,65.5 C67,72.5 61,77.5 54,77.5 C48,77.5 43,75.5 40,70" android:strokeColor="#FFFFD84D" android:strokeWidth="13" android:strokeLineCap="round" />
+        </group>
+        <group android:rotation="24.2" android:pivotX="54" android:pivotY="54">
+            <path android:pathData="M52,23 a2,2 0 0 1 4,0 V62 Q60.5,63 60.5,66.5 V84 a1.1,1.1 0 0 1 -2.2,0 V71 H56.9 V84 a1.1,1.1 0 0 1 -2.2,0 V71 H53.3 V84 a1.1,1.1 0 0 1 -2.2,0 V71 H49.7 V84 a1.1,1.1 0 0 1 -2.2,0 V66.5 Q47.5,63 52,62 Z" android:strokeColor="#FF2F6B3F" android:strokeWidth="1.6" />
+            <path android:pathData="M52,23 a2,2 0 0 1 4,0 V62 Q60.5,63 60.5,66.5 V84 a1.1,1.1 0 0 1 -2.2,0 V71 H56.9 V84 a1.1,1.1 0 0 1 -2.2,0 V71 H53.3 V84 a1.1,1.1 0 0 1 -2.2,0 V71 H49.7 V84 a1.1,1.1 0 0 1 -2.2,0 V66.5 Q47.5,63 52,62 Z" android:fillColor="#FF18201B" />
+        </group>
+        </group>
+    </group>
+</vector>
